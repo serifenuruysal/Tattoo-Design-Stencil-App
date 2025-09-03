@@ -1,7 +1,7 @@
-import { Hono } from "npm:hono";
-import { cors } from "npm:hono/cors";
-import { logger } from "npm:hono/logger";
-import * as kv from "./kv_store.tsx";
+import { Hono } from "https://deno.land/x/hono@v4.3.7/mod.ts";
+import { cors } from "https://deno.land/x/hono@v4.3.7/middleware.ts";
+import { logger } from "https://deno.land/x/hono@v4.3.7/middleware.ts";
+import * as kv from "./kv_store.ts";
 const app = new Hono();
 
 // Enable logger
